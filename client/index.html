@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#153A56">
+  <meta name="description" content="El Pistón - gestión local de taller automotriz">
+  <title>El Pistón | Gestión de taller</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <div id="app">
+    <main class="loading-screen"><div class="spinner"></div><p>Iniciando El Pistón…</p></main>
+  </div>
+  <dialog id="modal" class="form-dialog" aria-labelledby="modal-title">
+    <div class="dialog-top">
+      <div><h2 id="modal-title"></h2><p id="modal-description" class="muted"></p></div>
+      <button id="close-modal" type="button" class="icon-btn" aria-label="Cerrar ventana">✕</button>
+    </div>
+    <form id="modal-form">
+      <div id="modal-fields"></div>
+      <div class="dialog-actions">
+        <button type="button" class="btn btn-outline" id="cancel-modal">Cancelar</button>
+        <button type="submit" class="btn btn-primary" id="submit-modal">Guardar</button>
+      </div>
+    </form>
+  </dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="./js/app.js"></script>
+</body>
+</html>

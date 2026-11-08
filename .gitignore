@@ -1,0 +1,13 @@
+# Datos locales y secretos de PocketBase
+server/pb_data/
+server/pb_backups/
+server/pocketbase
+server/pocketbase.exe
+server/pocketbase_*.zip
+.env
+.env.*
+
+# Archivos temporales
+.DS_Store
+Thumbs.db
+__pycache__/
